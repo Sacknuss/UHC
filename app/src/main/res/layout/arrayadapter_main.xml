@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:background="#59765f"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Datum"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#bababb"
+                android:gravity="center"
+                android:id="@+id/datum"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tore (Heim)"
+            android:textColor="#FFFFFF"
+            android:id="@+id/heim_tore"
+            android:layout_below="@+id/header"
+            android:layout_toStartOf="@+id/colon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tore (Gast)"
+            android:textColor="#FFFFFF"
+            android:id="@+id/gast_tore"
+            android:layout_below="@+id/header"
+            android:layout_toEndOf="@+id/colon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Mannschaft (Heim)"
+            android:textColor="#FFFFFF"
+            android:id="@+id/heim_team"
+            android:layout_toLeftOf="@+id/heim_tore"
+            android:layout_alignTop="@+id/heim_tore"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Mannschaft (Gast)"
+            android:textColor="#FFFFFF"
+            android:id="@+id/gast_team"
+            android:layout_toRightOf="@+id/gast_tore"
+            android:layout_alignTop="@+id/gast_tore"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="7.5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=":"
+            android:textColor="#FFFFFF"
+            android:id="@+id/colon"
+            android:layout_below="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
