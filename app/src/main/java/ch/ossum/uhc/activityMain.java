@@ -29,6 +29,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 public class ActivityMain extends Activity {
 
+    public final String teamid = "420976";
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
@@ -60,7 +62,7 @@ public class ActivityMain extends Activity {
 
         try{
 
-            URL url = new URL("http://api.swissunihockey.ch/rest/v1.0/teams/428041/games/?limit=50");
+            URL url = new URL("http://api.swissunihockey.ch/rest/v1.0/teams/" + teamid + "/games/?limit=50");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             String readStream = readStream(con.getInputStream());
 
